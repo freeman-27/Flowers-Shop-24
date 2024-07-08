@@ -19,7 +19,7 @@
         <link rel="stylesheet" href="css/color-restyle.css">
         <link rel="stylesheet" href="css/customloaderFS24.css">
 </head>
-<body onload="loading_DOM_html()">
+<body onload="loading_DOM_html(), startAnimation()">
     <header id="mainHeader" data-bs-theme="light">
         <nav class="navbar navbar-expand-md navbar-dark fixed-top border-bottom bg--main--Header--DarkColor--restyle" style="backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);">
             <div class="container-fluid">
@@ -79,7 +79,7 @@
               </div>
             </div>
         </nav>
-        <div class="b-example-divider" id="navbarFixedTopBackgoundMask" style="block-size: 80px; background-color: #000000;"></div>
+        <div class="b-example-divider" id="navbarFixedTopBackgoundMask" style="block-size: 80px; background-color: #ffffff;"></div>
     </header>
       <!-- LOADER BLOCK -->
         <div class="container-fluid d-flex justify-content-center" id="loaderContainer">
@@ -89,7 +89,7 @@
         
     <main id="mainBlock" style="display: none;">
 
-            <div id="myCarousel" class="carousel slide mb-4 pb-4" data-bs-ride="carousel" data-bs-theme="">
+            <div id="myCarousel" class="carousel slide mt-5 mb-4 pb-4" data-bs-ride="carousel" data-bs-theme="">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -101,7 +101,7 @@
                   <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> -->
                   <div class="container">
                     <div class="carousel-caption text-start">
-                      <h1 class="display-1">Цветы и готовые букеты</h1>
+                      <h1 class="display-1 fw-bold">Цветы и готовые букеты</h1>
                       <p class="opacity-75">2024</p>
                       <p><a class="btn btn-lg btn-primary" href="#productBlock"><!-- <i class="demo-icon icon-th"></i>&ensp;--> Смотреть каталог</a></p>
                     </div>
@@ -112,7 +112,7 @@
                   <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> -->
                   <div class="container">
                     <div class="carousel-caption">
-                      <h1 class="display-1">Букеты по индивидуальному заказу.</h1>
+                      <h1 class="display-1 fw-bold">Букеты на заказ</h1>
                       <p>2024</p>
                       <p><a class="btn btn-lg btn-primary" href="#targetContacts"><!--<i class="demo-icon icon-doc-text"></i> &ensp;--> Узнать больше</a></p>
                     </div>
@@ -123,7 +123,7 @@
                   <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> -->
                   <div class="container">
                     <div class="carousel-caption text-end">
-                      <h1 class="display-1">Большой ассортимент</h1>
+                      <h1 class="display-1 fw-bold">Большой ассортимент</h1>
                       <p>2024</p>
                       <p><a class="btn btn-lg btn-primary" role="button" data-bs-toggle="modal" data-bs-target="#sign--UP--Modal"><!-- <i class="demo-icon icon-up-open"></i>&ensp;--> Зарегистрироваться</a></p>
                     </div>
@@ -150,62 +150,74 @@
             ================================================== -->
             <!-- Wrap the rest of the page in another container to center all the content. -->
             
-            <div class="mt-0 mb-5 py-5 border-top border-bottom bg--main--DarkColor--restyle text-center"><h2 class="pb-5 display-6 fw-bold text-light">Услуги</h2><a class="btn btn-lg btn-primary" href="#targetPrice">Узнать цены</a></div>
+            <div class="mt-0 mb-5 py-5 border-top border-bottom bg--main--DarkColor--restyle text-center"><h1 class="pb-5 display-5 fw-bold text-light">Услуги</h1><a class="btn btn-lg btn-primary" href="#targetPrice">Узнать цены</a></div>
             <div id="servicesContainer" class="container-fluid marketing mt-0 mb-5 pb-3">         
               <!-- Three columns of text below the carousel -->
               <div class="row fw-bold">
                 <div class="col-lg-4">
                   <a href="" class="" role="button" data-bs-toggle="modal" data-bs-target="#Modal-ShowDescription-01"><div>
-                  <i class="icon-publish"></i>
+                    <i class="">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="100px" viewBox="0 -960 960 960" width="100px" fill="#ffffff"><path d="M426-160q-9-26-23-48t-33-41q-19-19-41-33.5T281-306q2 29 14 54t32 45q20 20 45 32.5t54 14.5Zm108 0q29-3 54-15t45-32q20-20 32-45t15-54q-26 9-48.5 23T590-250q-19 19-33 41.5T534-160Zm-54-360q66 0 113-47t47-113v-48l-70 59-90-109-90 109-70-59v48q0 66 47 113t113 47ZM440-80q-100 0-170-70t-70-170v-80q71-1 134 29t106 81v-153q-86-14-143-80.5T240-680v-136q0-26 23-36.5t43 6.5l74 64 69-84q12-14 31-14t31 14l69 84 74-64q20-17 43-6.5t23 36.5v136q0 90-57 156.5T520-443v153q43-51 106-81t134-29v80q0 100-70 170T520-80h-80Zm40-569Zm127 416Zm-253 0Z"/></svg>
+                    </i><p></p>
                   <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> -->
-                  <h2 class="fw-normal">Разработка сайтов.</h2>
-                  <p>Создание сайта для компании или персонального бизнеса.</p>
+                  <h2 class="fw-bold">Букеты из одного вида цветов</h2>
+                  <p>Заказ цветов. flower-shop-24.</p>
                   <!-- <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p> *TO DO MODAL -->
                   </div></a>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
                   <a href="" class="" role="button" data-bs-toggle="modal" data-bs-target="#Modal-ShowDescription-02"><div>
-                  <i class="icon-address-card-o"></i><p></p>
+                    <i class="">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="100px" viewBox="0 -960 960 960" width="100px" fill="#ffffff"><path d="M426-160q-9-26-23-48t-33-41q-19-19-41-33.5T281-306q2 29 14 54t32 45q20 20 45 32.5t54 14.5Zm108 0q29-3 54-15t45-32q20-20 32-45t15-54q-26 9-48.5 23T590-250q-19 19-33 41.5T534-160Zm-54-360q66 0 113-47t47-113v-48l-70 59-90-109-90 109-70-59v48q0 66 47 113t113 47ZM440-80q-100 0-170-70t-70-170v-80q71-1 134 29t106 81v-153q-86-14-143-80.5T240-680v-136q0-26 23-36.5t43 6.5l74 64 69-84q12-14 31-14t31 14l69 84 74-64q20-17 43-6.5t23 36.5v136q0 90-57 156.5T520-443v153q43-51 106-81t134-29v80q0 100-70 170T520-80h-80Zm40-569Zm127 416Zm-253 0Z"/></svg>
+                    </i><p></p>
                   <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> -->
-                  <h2 class="fw-normal">Создание лендингов.</h2>
-                  <p>Верстка лендингов по индивидуальному заказу.</p>
+                  <h2 class="fw-bold">Букеты из двух видов цветов</h2>
+                  <p>Заказ цветов. flower-shop-24.</p>
                   <!-- <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p> *TO DO MODAL -->
                   </div></a>
     
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
                   <a href="" class="" role="button" data-bs-toggle="modal" data-bs-target="#Modal-ShowDescription-03"><div>
-                  <i class="icon-th"></i><p></p>
+                    <i class="">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="100px" viewBox="0 -960 960 960" width="100px" fill="#ffffff"><path d="M426-160q-9-26-23-48t-33-41q-19-19-41-33.5T281-306q2 29 14 54t32 45q20 20 45 32.5t54 14.5Zm108 0q29-3 54-15t45-32q20-20 32-45t15-54q-26 9-48.5 23T590-250q-19 19-33 41.5T534-160Zm-54-360q66 0 113-47t47-113v-48l-70 59-90-109-90 109-70-59v48q0 66 47 113t113 47ZM440-80q-100 0-170-70t-70-170v-80q71-1 134 29t106 81v-153q-86-14-143-80.5T240-680v-136q0-26 23-36.5t43 6.5l74 64 69-84q12-14 31-14t31 14l69 84 74-64q20-17 43-6.5t23 36.5v136q0 90-57 156.5T520-443v153q43-51 106-81t134-29v80q0 100-70 170T520-80h-80Zm40-569Zm127 416Zm-253 0Z"/></svg>
+                    </i><p></p>
                   <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> -->
-                  <h2 class="fw-normal">Управление сайтом.</h2>
-                  <p>Подготовка к запуску и упавление сайтом.<br><br></p>
+                  <h2 class="fw-bold">Букеты из разных видов цветов</h2>
+                  <p>Заказ цветов. flower-shop-24.<br><br></p>
                   <!-- <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p> *TO DO MODAL -->
                   </div></a>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
                   <a href="" class="" role="button" data-bs-toggle="modal" data-bs-target="#Modal-ShowDescription-04"><div>
-                  <i class="icon-mail"></i><p></p>
+                    <i class="">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="100px" viewBox="0 -960 960 960" width="100px" fill="#ffffff"><path d="M426-160q-9-26-23-48t-33-41q-19-19-41-33.5T281-306q2 29 14 54t32 45q20 20 45 32.5t54 14.5Zm108 0q29-3 54-15t45-32q20-20 32-45t15-54q-26 9-48.5 23T590-250q-19 19-33 41.5T534-160Zm-54-360q66 0 113-47t47-113v-48l-70 59-90-109-90 109-70-59v48q0 66 47 113t113 47ZM440-80q-100 0-170-70t-70-170v-80q71-1 134 29t106 81v-153q-86-14-143-80.5T240-680v-136q0-26 23-36.5t43 6.5l74 64 69-84q12-14 31-14t31 14l69 84 74-64q20-17 43-6.5t23 36.5v136q0 90-57 156.5T520-443v153q43-51 106-81t134-29v80q0 100-70 170T520-80h-80Zm40-569Zm127 416Zm-253 0Z"/></svg>
+                    </i><p></p>
                   <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> -->
-                  <h2 class="fw-normal">Верстка для E-mail рассылок.</h2>
-                  <p>Создание макетов электронных писем для рассылки в почтовых сервисах.</p>
+                  <h2 class="fw-bold">Цветы в ассортименте</h2>
+                  <p>Заказ цветов. flower-shop-24.</p>
                   <!-- <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p> *TO DO MODAL -->
                   </div></a>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
                   <a href="" class="" role="button" data-bs-toggle="modal" data-bs-target="#Modal-ShowDescription-05"><div>
-                  <i class="icon-youtube"></i><p></p>
+                    <i class="">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="100px" viewBox="0 -960 960 960" width="100px" fill="#ffffff"><path d="M426-160q-9-26-23-48t-33-41q-19-19-41-33.5T281-306q2 29 14 54t32 45q20 20 45 32.5t54 14.5Zm108 0q29-3 54-15t45-32q20-20 32-45t15-54q-26 9-48.5 23T590-250q-19 19-33 41.5T534-160Zm-54-360q66 0 113-47t47-113v-48l-70 59-90-109-90 109-70-59v48q0 66 47 113t113 47ZM440-80q-100 0-170-70t-70-170v-80q71-1 134 29t106 81v-153q-86-14-143-80.5T240-680v-136q0-26 23-36.5t43 6.5l74 64 69-84q12-14 31-14t31 14l69 84 74-64q20-17 43-6.5t23 36.5v136q0 90-57 156.5T520-443v153q43-51 106-81t134-29v80q0 100-70 170T520-80h-80Zm40-569Zm127 416Zm-253 0Z"/></svg>
+                    </i><p></p>
                   <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> -->
-                  <h2 class="fw-normal">Редактирование, изменение контента.</h2>
-                  <p>Управление или добвавление контента на сайт клиента.</p>
+                  <h2 class="fw-bold">Цветы с доставкой</h2>
+                  <p>Заказ цветов. flower-shop-24.</p>
                   <!-- <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p> *TO DO MODAL -->
                   </div></a>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
                   <a href="" class="" role="button" data-bs-toggle="modal" data-bs-target="#Modal-ShowDescription-06"><div>
-                  <i class="icon-edit"></i><p></p>
+                    <i class="">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="100px" viewBox="0 -960 960 960" width="100px" fill="#ffffff"><path d="M426-160q-9-26-23-48t-33-41q-19-19-41-33.5T281-306q2 29 14 54t32 45q20 20 45 32.5t54 14.5Zm108 0q29-3 54-15t45-32q20-20 32-45t15-54q-26 9-48.5 23T590-250q-19 19-33 41.5T534-160Zm-54-360q66 0 113-47t47-113v-48l-70 59-90-109-90 109-70-59v48q0 66 47 113t113 47ZM440-80q-100 0-170-70t-70-170v-80q71-1 134 29t106 81v-153q-86-14-143-80.5T240-680v-136q0-26 23-36.5t43 6.5l74 64 69-84q12-14 31-14t31 14l69 84 74-64q20-17 43-6.5t23 36.5v136q0 90-57 156.5T520-443v153q43-51 106-81t134-29v80q0 100-70 170T520-80h-80Zm40-569Zm127 416Zm-253 0Z"/></svg>
+                    </i><p></p>
                   <!-- <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> -->
-                  <h2 class="fw-normal">Редактирование контекстной рекламы.</h2>
-                  <p>Управление или добвавление контента для контекстной рекламы.</p>
+                  <h2 class="fw-bold">Цветы оптом</h2>
+                  <p>Заказ цветов. flower-shop-24.</p>
                   <!-- <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p> *TO DO MODAL -->
                   </div></a>
                 </div><!-- /.col-lg-4 -->
@@ -333,10 +345,9 @@
               <li class="nav-item"><a href="#targetContacts" class="nav-link px-2 text-light">Реквизиты</a></li>
               <!-- list-part2 -->
               <li class="nav-item"><a href="#servicesMain" class="nav-link px-2 text-light">Услуги</a></li>
-              <li class="nav-item"><a href="" class="nav-link px-2 text-light" onclick="goGitFunc()">GitHub</a></li>              
               <!-- list-part3 -->              
               <li class="nav-item"><a href="privacy-policy/PolicyStartPage.html" class="nav-link px-2 text-light">Персональные данные</a></li>
-              <li class="nav-item"><a href="#" class="nav-link px-2 text-light">webmaking.pro</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-light">flower-shop-24</a></li>
               <!-- <li class="nav-item"><a href="#" class="nav-link px-2 text-light"></a></li> -->
             </ul>
             
@@ -352,9 +363,10 @@
     <!-- SCRIPTS -->
     <!-- Option 1: Bootstrap Bundle with Popper -->   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.4.2.min.js"></script>    
     <!-- custom scripts pandoge-->
-    <!-- <script src="./LivesFallEffectJS_jsnow_pandoge/snow/jSnow.js"></script> -->
-    <!-- <script src="LivesFallEffectJS.js"></script> -->
+    <script src="js/LivesFallEffectJS_jsnow_pandoge/snow/jSnow.js"></script>
+    <script src="js/LivesFallEffectJS.js"></script>
     <!-- custom scripts FS24-->
     <script src="js/preloadPageJS.js"></script>
     <script src="js/mainPageToggleActiveLink.js"></script>

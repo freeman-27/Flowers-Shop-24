@@ -7,12 +7,19 @@
 body{
     margin: 0;
     padding: 0;
-	background-image: url("/img/Backgrounds/hexagon\ texture1000-light-gray.png"), linear-gradient(to bottom right, #c99fb4, #462738);
-    background-repeat: repeat, no-repeat;
-	background-position: 0px 0px, 0px 0px !important;
-	background-size: 50% auto, 100% 1000%;
+	background: linear-gradient(to bottom right, #c99fb4, #462738);
+   
+
 }
 /*BACKGROUND*/
+#customBackgroundBlock{
+    /* background: none; */
+    background-image: url("/img/Backgrounds/svgBackground/flowers\ imitate\ -\ random\ Icons\ Grid\ white\ opacity30.png"), linear-gradient(to bottom right, #c99fb4, #462738);
+    background-repeat: repeat, no-repeat;
+    background-position: 500px 2000px, 0px 0px !important;
+    background-size: 50% auto, 100% 1000%;
+    background-attachment: fixed;
+}
 #videoBackground{
     display: block;
     /* display: initial; */
@@ -30,7 +37,7 @@ nav i, .marketing i{
 	font-size: 75px;
 	padding: 25px;
 	border: 8px solid white;
-	background-color: rgba(33, 47, 61, 0.65);
+	background-color: rgba(61, 33, 59, 0.65);
 	/* background-color: #273746; */
 	border-radius: 50%;
 }
@@ -42,7 +49,7 @@ nav i, .marketing i{
 .icon--alt--style{
 	margin: 0 5px 0 5px;
 	border: 2px solid white;
-	background-color: rgba(33, 47, 61, 0.65);
+	background-color: rgba(61, 33, 61, 0.65);
 	/* background-color: #273746; */
 	border-radius: 50%;
     /* padding: 0 6px 0 6px; */
@@ -71,24 +78,27 @@ h2{
 }
 #Modal-ShowDescription-01 .modal-content, #Modal-ShowDescription-02 .modal-content,#Modal-ShowDescription-03 .modal-content,
 #Modal-ShowDescription-04 .modal-content,#Modal-ShowDescription-05 .modal-content,#Modal-ShowDescription-06 .modal-content {
-    box-shadow: 0 0px 24px 32px rgba(166, 255, 0, 0.76), 0 0px 60px 65px rgba(255, 255, 255, 0.4) !important;
+    box-shadow: 0 0px 24px 32px rgba(247, 0, 255, 0.76), 0 0px 60px 65px rgba(255, 255, 255, 0.4) !important;
     border-width: 10px !important;
 }
 #servicesContainer a{
-    color: var(--bg-main--Header--DarkColor-restyle);
+    /* color: var(--bg-main--Header--DarkColor-restyle); */
+    color: #ffd8ff;
+    transition-duration: 0.5s;
+
     text-decoration: none;
 }
 #servicesContainer a:hover{
     color: black;
     cursor:pointer;    
-    text-shadow: 0 0 10px yellowgreen, 0 0 20px white;
+    text-shadow: 0 0 10px rgb(205, 50, 192), 0 0 20px white;
     transition-duration: 0.5s;
 }
 #servicesContainer i:hover{
     cursor:pointer;
-    box-shadow: 0 0px 24px 32px rgba(166, 255, 0, 0.76), 0 0px 60px 65px rgba(255, 255, 255, 0.4) !important;
+    box-shadow: 0 0px 24px 32px rgba(205, 50, 192, 0.76), 0 0px 60px 65px rgba(255, 255, 255, 0.4) !important;
     border-color: var(--bg-main--Header--DarkColor-restyle);
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
 }
 #servicesContainer i:active{
     cursor:pointer;
@@ -123,17 +133,9 @@ footer{
     body{
 	    /* background: none; */
 	    background-image: linear-gradient(to bottom right, #c99fb3, #46272e, #c99fb3, #46272e  /* yellowgreen/* #d3dbe0*/  );  
-        background-repeat: no-repeat;
-	    background-size: auto auto;
+        background-size: auto auto;
     }
-    #customBackgroundBlock{
-	    /* background: none; */
-        background-image: url("/img/Backgrounds/hexagon\ texture1000-light-gray.png"), linear-gradient(to bottom right, #c99fb4, #462738);
-        background-repeat: repeat, no-repeat;
-        background-position: 500px 1000px, 0px 0px !important;
-	    background-size: 10% auto, 100% 1000%;
-        background-attachment: fixed;
-    }
+
     #videoBackground{
         display: block !important;
     }
