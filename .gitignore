@@ -1,6 +1,7 @@
 Основные блоки(страницы) сайта.txt
+# include folders to project:
 # img/
-svg/
+# svg/
 email-img/
 node_modules/
 php/connConfig.php
