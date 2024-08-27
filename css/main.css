@@ -311,7 +311,7 @@ footer{
         display: none;
     }
     .carousel{
-        z-index: -1;
+        /* z-index: -1; */
         /* margin-top: -8.5rem; */
         height: 30rem !important;
     }

@@ -1,13 +1,13 @@
 var timeoutToRunFunction;
  
-$(document).ready(function startAnimation(){
+$("#onloadAnimation").ready(function startAnimation(){
 		timeoutToRunFunction = setTimeout(flowersAnimation, 5000);		
 		});
 
 		function flowersAnimation(){
-			$("body").jSnow({
+			$().jSnow({
 			vSize: 2000, //Размер области
-			flakes: 300, //Количество элементов.
+			flakes: 1000, //Количество элементов.
 			flakeColor: ["yellow", "violet", "red"], // цвет  элементов
 			flakeMinSize: 5, //Размер минимальный
 			flakeMaxSize: 15, //Размер максимальный
